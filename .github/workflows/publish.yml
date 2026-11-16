@@ -1,0 +1,78 @@
+name: publish
+
+on:
+  workflow_dispatch:
+    inputs:
+      version:
+        description: The version to publish. It must equal the version in package.json.
+        required: true
+      confirm:
+        description: Type PUBLISH to confirm. Publishing a version is irreversible.
+        required: true
+
+permissions:
+  contents: read
+  id-token: write
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Refuse without the confirmation word
+        run: |
+          if [ "${{ inputs.confirm }}" != "PUBLISH" ]; then
+            echo "::error::confirm was not PUBLISH, so nothing was published"
+            exit 1
+          fi
+
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+        with:
+          persist-credentials: false
+
+      - uses: actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1
+        with:
+          node-version: 24
+          registry-url: https://registry.npmjs.org
+
+      - name: Refuse when the asked version is not the version in the tree
+        run: |
+          tree=$(node -p "require('./package.json').version")
+          if [ "$tree" != "${{ inputs.version }}" ]; then
+            echo "::error::package.json holds $tree, the run asked for ${{ inputs.version }}"
+            exit 1
+          fi
+
+      - name: Refuse when this version is already on the registry
+        run: |
+          code=$(curl -s -o /dev/null -w '%{http_code}' \
+            "https://registry.npmjs.org/evals-baseline/${{ inputs.version }}")
+          if [ "$code" = "200" ]; then
+            echo "::error::evals-baseline ${{ inputs.version }} is already published; there is no second one"
+            exit 1
+          fi
+          echo "registry answered $code for that version, so it is free"
+
+      - name: Install
+        run: npm ci
+
+      - name: Test
+        run: npm test
+
+      - name: Rebuild and compare
+        run: node build/build.mjs --check
+
+      - name: Parity
+        run: node build/parity.mjs
+
+      - name: Guards
+        run: node build/guards.mjs
+
+      - name: Publish
+        run: npm publish --provenance --access public
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPMJS_TOKEN }}
+
+      - name: Say what landed
+        run: |
+          echo "published evals-baseline ${{ inputs.version }}"
+          npm view evals-baseline@${{ inputs.version }} dist.integrity

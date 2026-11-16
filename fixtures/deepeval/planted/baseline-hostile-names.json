@@ -1,0 +1,55 @@
+{
+  "spec": "1.0",
+  "source": {
+    "tool": "deepeval",
+    "toolVersion": null,
+    "shape": "deepeval-test-run"
+  },
+  "recordedAt": "2026-09-02T09:00:00.000Z",
+  "cases": {
+    "count": 4,
+    "digest": "c8663ee8bc8a"
+  },
+  "metrics": {
+    "##[stop-commands]tok": {
+      "value": 1,
+      "samples": 4,
+      "tolerance": 0
+    },
+    "::error title=pwned::forged annotation": {
+      "value": 1,
+      "samples": 4,
+      "tolerance": 0
+    },
+    "Accuracy": {
+      "value": 1,
+      "samples": 4,
+      "tolerance": 0
+    },
+    "Accuracy\u2028below-baseline Format: 0 is below the baseline 1 by 1, more than the tolerance 0\u2028": {
+      "value": 1,
+      "samples": 4,
+      "tolerance": 0
+    },
+    "Csi\u009b31mred": {
+      "value": 1,
+      "samples": 4,
+      "tolerance": 0
+    },
+    "Format": {
+      "value": 1,
+      "samples": 4,
+      "tolerance": 0
+    },
+    "Line\u0085break": {
+      "value": 1,
+      "samples": 4,
+      "tolerance": 0
+    },
+    "Rlo\u202eabc": {
+      "value": 1,
+      "samples": 4,
+      "tolerance": 0
+    }
+  }
+}

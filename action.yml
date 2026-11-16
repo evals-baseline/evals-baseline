@@ -1,0 +1,20 @@
+name: evals-baseline
+description: Compares an evaluation run from promptfoo or DeepEval with a committed baseline, prints what regressed, and writes one annotation per finding.
+inputs:
+  run-file:
+    description: The run file written by promptfoo or DeepEval, relative to the workspace.
+    required: true
+  baseline:
+    description: The baseline file, relative to the workspace.
+    required: false
+    default: evals-baseline.json
+  strict:
+    description: The value true runs the check with --strict. Any other value turns that off.
+    required: false
+    default: 'false'
+outputs:
+  findings:
+    description: The number of findings, as a string.
+runs:
+  using: node24
+  main: dist/action.mjs

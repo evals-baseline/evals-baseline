@@ -1,0 +1,63 @@
+{
+  "testCases": [
+    {
+      "name": "test_case_0",
+      "input": "a",
+      "actualOutput": "Paris",
+      "flaky": false,
+      "success": true,
+      "metricsData": [
+        {
+          "name": "Accuracy",
+          "threshold": 0.5,
+          "success": true,
+          "score": 1,
+          "strictMode": false,
+          "flaky": false
+        },
+        {
+          "name": "Format",
+          "threshold": 0.5,
+          "success": true,
+          "score": 1,
+          "strictMode": false,
+          "flaky": false
+        }
+      ],
+      "runDuration": 0.002547041978687048,
+      "order": 0
+    }
+  ],
+  "conversationalTestCases": [],
+  "metricsScores": [
+    {
+      "metric": "Accuracy",
+      "scores": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "passes": 4,
+      "fails": 0,
+      "errors": 0
+    },
+    {
+      "metric": "Format",
+      "scores": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "passes": 4,
+      "fails": 0,
+      "errors": 0
+    }
+  ],
+  "prompts": [],
+  "testPassed": 4,
+  "testFailed": 0,
+  "runDuration": 0.01740212505683303,
+  "official": false
+}

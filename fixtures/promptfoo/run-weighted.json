@@ -1,0 +1,799 @@
+{
+  "evalId": "eval-cz0-2026-11-11T22:54:46",
+  "results": {
+    "version": 3,
+    "timestamp": "2026-11-11T22:54:46.024Z",
+    "prompts": [
+      {
+        "id": "f96834e0c9138f8c1b4d5322f71751aacb2ebbfbef8b09ef82164ec3c1f5747e",
+        "raw": "Capital of {{country}}?",
+        "label": "Capital of {{country}}?",
+        "provider": "agent",
+        "metrics": {
+          "score": 3.8,
+          "testPassCount": 3,
+          "testFailCount": 1,
+          "testErrorCount": 0,
+          "testCacheHitCount": 0,
+          "assertPassCount": 11,
+          "assertFailCount": 1,
+          "totalLatencyMs": 8,
+          "tokenUsage": {
+            "prompt": 0,
+            "completion": 0,
+            "cached": 0,
+            "total": 0,
+            "numRequests": 4,
+            "completionDetails": {
+              "reasoning": 0,
+              "acceptedPrediction": 0,
+              "rejectedPrediction": 0,
+              "cacheReadInputTokens": 0,
+              "cacheCreationInputTokens": 0
+            },
+            "assertions": {
+              "total": 0,
+              "prompt": 0,
+              "completion": 0,
+              "cached": 0,
+              "numRequests": 0,
+              "completionDetails": {
+                "reasoning": 0,
+                "acceptedPrediction": 0,
+                "rejectedPrediction": 0,
+                "cacheReadInputTokens": 0,
+                "cacheCreationInputTokens": 0
+              }
+            }
+          },
+          "namedScores": {
+            "accuracy": 15,
+            "format": 4
+          },
+          "namedScoresCount": {
+            "accuracy": 8,
+            "format": 4
+          },
+          "namedScoreWeights": {
+            "accuracy": 16,
+            "format": 4
+          },
+          "cost": 0
+        }
+      }
+    ],
+    "results": [
+      {
+        "cost": 0,
+        "gradingResult": {
+          "pass": true,
+          "score": 1,
+          "reason": "All assertions passed",
+          "namedScores": {
+            "accuracy": 1,
+            "format": 1
+          },
+          "namedScoreWeights": {
+            "accuracy": 4,
+            "format": 1
+          },
+          "tokensUsed": {
+            "total": 0,
+            "prompt": 0,
+            "completion": 0,
+            "cached": 0,
+            "numRequests": 0
+          },
+          "componentResults": [
+            {
+              "pass": true,
+              "score": 1,
+              "reason": "Assertion passed",
+              "assertion": {
+                "type": "contains",
+                "value": "Paris",
+                "metric": "accuracy"
+              }
+            },
+            {
+              "pass": true,
+              "score": 1,
+              "reason": "Assertion passed",
+              "assertion": {
+                "type": "regex",
+                "value": "^[A-Z]",
+                "metric": "accuracy",
+                "weight": 3
+              }
+            },
+            {
+              "pass": true,
+              "score": 1,
+              "reason": "Assertion passed",
+              "assertion": {
+                "type": "regex",
+                "value": "^[A-Z][a-z]+$",
+                "metric": "format"
+              }
+            }
+          ]
+        },
+        "id": "70f89bf7-78cf-42b4-95d8-8ac0d72e9b2a",
+        "latencyMs": 3,
+        "namedScores": {
+          "accuracy": 1,
+          "format": 1
+        },
+        "prompt": {
+          "raw": "Capital of France?",
+          "label": "Capital of {{country}}?",
+          "config": {}
+        },
+        "promptId": "f96834e0c9138f8c1b4d5322f71751aacb2ebbfbef8b09ef82164ec3c1f5747e",
+        "promptIdx": 0,
+        "provider": {
+          "id": "file://agent.mjs",
+          "label": "agent"
+        },
+        "response": {
+          "output": "Paris"
+        },
+        "score": 1,
+        "success": true,
+        "testCase": {
+          "vars": {
+            "country": "France"
+          },
+          "assert": [
+            {
+              "type": "contains",
+              "value": "Paris",
+              "metric": "accuracy"
+            },
+            {
+              "type": "regex",
+              "value": "^[A-Z]",
+              "metric": "accuracy",
+              "weight": 3
+            },
+            {
+              "type": "regex",
+              "value": "^[A-Z][a-z]+$",
+              "metric": "format"
+            }
+          ],
+          "options": {},
+          "metadata": {}
+        },
+        "testIdx": 0,
+        "tokenUsage": {
+          "prompt": 0,
+          "completion": 0,
+          "cached": 0,
+          "total": 0,
+          "numRequests": 1,
+          "completionDetails": {
+            "reasoning": 0,
+            "acceptedPrediction": 0,
+            "rejectedPrediction": 0,
+            "cacheReadInputTokens": 0,
+            "cacheCreationInputTokens": 0
+          },
+          "assertions": {
+            "total": 0,
+            "prompt": 0,
+            "completion": 0,
+            "cached": 0,
+            "numRequests": 0,
+            "completionDetails": {
+              "reasoning": 0,
+              "acceptedPrediction": 0,
+              "rejectedPrediction": 0,
+              "cacheReadInputTokens": 0,
+              "cacheCreationInputTokens": 0
+            }
+          }
+        },
+        "vars": {
+          "country": "France"
+        },
+        "metadata": {
+          "_promptfooFileMetadata": {}
+        },
+        "failureReason": 0
+      },
+      {
+        "cost": 0,
+        "gradingResult": {
+          "pass": true,
+          "score": 1,
+          "reason": "All assertions passed",
+          "namedScores": {
+            "accuracy": 1,
+            "format": 1
+          },
+          "namedScoreWeights": {
+            "accuracy": 4,
+            "format": 1
+          },
+          "tokensUsed": {
+            "total": 0,
+            "prompt": 0,
+            "completion": 0,
+            "cached": 0,
+            "numRequests": 0
+          },
+          "componentResults": [
+            {
+              "pass": true,
+              "score": 1,
+              "reason": "Assertion passed",
+              "assertion": {
+                "type": "contains",
+                "value": "Tokyo",
+                "metric": "accuracy"
+              }
+            },
+            {
+              "pass": true,
+              "score": 1,
+              "reason": "Assertion passed",
+              "assertion": {
+                "type": "regex",
+                "value": "^[A-Z]",
+                "metric": "accuracy",
+                "weight": 3
+              }
+            },
+            {
+              "pass": true,
+              "score": 1,
+              "reason": "Assertion passed",
+              "assertion": {
+                "type": "regex",
+                "value": "^[A-Z][a-z]+$",
+                "metric": "format"
+              }
+            }
+          ]
+        },
+        "id": "5b7c6d18-ee3e-438c-bdca-cefd157003f5",
+        "latencyMs": 2,
+        "namedScores": {
+          "accuracy": 1,
+          "format": 1
+        },
+        "prompt": {
+          "raw": "Capital of Japan?",
+          "label": "Capital of {{country}}?",
+          "config": {}
+        },
+        "promptId": "f96834e0c9138f8c1b4d5322f71751aacb2ebbfbef8b09ef82164ec3c1f5747e",
+        "promptIdx": 0,
+        "provider": {
+          "id": "file://agent.mjs",
+          "label": "agent"
+        },
+        "response": {
+          "output": "Tokyo"
+        },
+        "score": 1,
+        "success": true,
+        "testCase": {
+          "vars": {
+            "country": "Japan"
+          },
+          "assert": [
+            {
+              "type": "contains",
+              "value": "Tokyo",
+              "metric": "accuracy"
+            },
+            {
+              "type": "regex",
+              "value": "^[A-Z]",
+              "metric": "accuracy",
+              "weight": 3
+            },
+            {
+              "type": "regex",
+              "value": "^[A-Z][a-z]+$",
+              "metric": "format"
+            }
+          ],
+          "options": {},
+          "metadata": {}
+        },
+        "testIdx": 1,
+        "tokenUsage": {
+          "prompt": 0,
+          "completion": 0,
+          "cached": 0,
+          "total": 0,
+          "numRequests": 1,
+          "completionDetails": {
+            "reasoning": 0,
+            "acceptedPrediction": 0,
+            "rejectedPrediction": 0,
+            "cacheReadInputTokens": 0,
+            "cacheCreationInputTokens": 0
+          },
+          "assertions": {
+            "total": 0,
+            "prompt": 0,
+            "completion": 0,
+            "cached": 0,
+            "numRequests": 0,
+            "completionDetails": {
+              "reasoning": 0,
+              "acceptedPrediction": 0,
+              "rejectedPrediction": 0,
+              "cacheReadInputTokens": 0,
+              "cacheCreationInputTokens": 0
+            }
+          }
+        },
+        "vars": {
+          "country": "Japan"
+        },
+        "metadata": {
+          "_promptfooFileMetadata": {}
+        },
+        "failureReason": 0
+      },
+      {
+        "cost": 0,
+        "gradingResult": {
+          "pass": true,
+          "score": 1,
+          "reason": "All assertions passed",
+          "namedScores": {
+            "accuracy": 1,
+            "format": 1
+          },
+          "namedScoreWeights": {
+            "accuracy": 4,
+            "format": 1
+          },
+          "tokensUsed": {
+            "total": 0,
+            "prompt": 0,
+            "completion": 0,
+            "cached": 0,
+            "numRequests": 0
+          },
+          "componentResults": [
+            {
+              "pass": true,
+              "score": 1,
+              "reason": "Assertion passed",
+              "assertion": {
+                "type": "contains",
+                "value": "Lima",
+                "metric": "accuracy"
+              }
+            },
+            {
+              "pass": true,
+              "score": 1,
+              "reason": "Assertion passed",
+              "assertion": {
+                "type": "regex",
+                "value": "^[A-Z]",
+                "metric": "accuracy",
+                "weight": 3
+              }
+            },
+            {
+              "pass": true,
+              "score": 1,
+              "reason": "Assertion passed",
+              "assertion": {
+                "type": "regex",
+                "value": "^[A-Z][a-z]+$",
+                "metric": "format"
+              }
+            }
+          ]
+        },
+        "id": "f60e4012-c5a5-412e-b78d-d12141ff3177",
+        "latencyMs": 2,
+        "namedScores": {
+          "accuracy": 1,
+          "format": 1
+        },
+        "prompt": {
+          "raw": "Capital of Peru?",
+          "label": "Capital of {{country}}?",
+          "config": {}
+        },
+        "promptId": "f96834e0c9138f8c1b4d5322f71751aacb2ebbfbef8b09ef82164ec3c1f5747e",
+        "promptIdx": 0,
+        "provider": {
+          "id": "file://agent.mjs",
+          "label": "agent"
+        },
+        "response": {
+          "output": "Lima"
+        },
+        "score": 1,
+        "success": true,
+        "testCase": {
+          "vars": {
+            "country": "Peru"
+          },
+          "assert": [
+            {
+              "type": "contains",
+              "value": "Lima",
+              "metric": "accuracy"
+            },
+            {
+              "type": "regex",
+              "value": "^[A-Z]",
+              "metric": "accuracy",
+              "weight": 3
+            },
+            {
+              "type": "regex",
+              "value": "^[A-Z][a-z]+$",
+              "metric": "format"
+            }
+          ],
+          "options": {},
+          "metadata": {}
+        },
+        "testIdx": 2,
+        "tokenUsage": {
+          "prompt": 0,
+          "completion": 0,
+          "cached": 0,
+          "total": 0,
+          "numRequests": 1,
+          "completionDetails": {
+            "reasoning": 0,
+            "acceptedPrediction": 0,
+            "rejectedPrediction": 0,
+            "cacheReadInputTokens": 0,
+            "cacheCreationInputTokens": 0
+          },
+          "assertions": {
+            "total": 0,
+            "prompt": 0,
+            "completion": 0,
+            "cached": 0,
+            "numRequests": 0,
+            "completionDetails": {
+              "reasoning": 0,
+              "acceptedPrediction": 0,
+              "rejectedPrediction": 0,
+              "cacheReadInputTokens": 0,
+              "cacheCreationInputTokens": 0
+            }
+          }
+        },
+        "vars": {
+          "country": "Peru"
+        },
+        "metadata": {
+          "_promptfooFileMetadata": {}
+        },
+        "failureReason": 0
+      },
+      {
+        "cost": 0,
+        "error": "Expected output to contain \"Nairobi\"",
+        "gradingResult": {
+          "pass": false,
+          "score": 0.8,
+          "reason": "Expected output to contain \"Nairobi\"",
+          "namedScores": {
+            "accuracy": 0.75,
+            "format": 1
+          },
+          "namedScoreWeights": {
+            "accuracy": 4,
+            "format": 1
+          },
+          "tokensUsed": {
+            "total": 0,
+            "prompt": 0,
+            "completion": 0,
+            "cached": 0,
+            "numRequests": 0
+          },
+          "componentResults": [
+            {
+              "pass": false,
+              "score": 0,
+              "reason": "Expected output to contain \"Nairobi\"",
+              "assertion": {
+                "type": "contains",
+                "value": "Nairobi",
+                "metric": "accuracy"
+              }
+            },
+            {
+              "pass": true,
+              "score": 1,
+              "reason": "Assertion passed",
+              "assertion": {
+                "type": "regex",
+                "value": "^[A-Z]",
+                "metric": "accuracy",
+                "weight": 3
+              }
+            },
+            {
+              "pass": true,
+              "score": 1,
+              "reason": "Assertion passed",
+              "assertion": {
+                "type": "regex",
+                "value": "^[A-Z][a-z]+$",
+                "metric": "format"
+              }
+            }
+          ]
+        },
+        "id": "113359d7-07b1-49b8-8137-fe164f5b10c3",
+        "latencyMs": 1,
+        "namedScores": {
+          "accuracy": 0.75,
+          "format": 1
+        },
+        "prompt": {
+          "raw": "Capital of Kenya?",
+          "label": "Capital of {{country}}?",
+          "config": {}
+        },
+        "promptId": "f96834e0c9138f8c1b4d5322f71751aacb2ebbfbef8b09ef82164ec3c1f5747e",
+        "promptIdx": 0,
+        "provider": {
+          "id": "file://agent.mjs",
+          "label": "agent"
+        },
+        "response": {
+          "output": "Mombasa"
+        },
+        "score": 0.8,
+        "success": false,
+        "testCase": {
+          "vars": {
+            "country": "Kenya"
+          },
+          "assert": [
+            {
+              "type": "contains",
+              "value": "Nairobi",
+              "metric": "accuracy"
+            },
+            {
+              "type": "regex",
+              "value": "^[A-Z]",
+              "metric": "accuracy",
+              "weight": 3
+            },
+            {
+              "type": "regex",
+              "value": "^[A-Z][a-z]+$",
+              "metric": "format"
+            }
+          ],
+          "options": {},
+          "metadata": {}
+        },
+        "testIdx": 3,
+        "tokenUsage": {
+          "prompt": 0,
+          "completion": 0,
+          "cached": 0,
+          "total": 0,
+          "numRequests": 1,
+          "completionDetails": {
+            "reasoning": 0,
+            "acceptedPrediction": 0,
+            "rejectedPrediction": 0,
+            "cacheReadInputTokens": 0,
+            "cacheCreationInputTokens": 0
+          },
+          "assertions": {
+            "total": 0,
+            "prompt": 0,
+            "completion": 0,
+            "cached": 0,
+            "numRequests": 0,
+            "completionDetails": {
+              "reasoning": 0,
+              "acceptedPrediction": 0,
+              "rejectedPrediction": 0,
+              "cacheReadInputTokens": 0,
+              "cacheCreationInputTokens": 0
+            }
+          }
+        },
+        "vars": {
+          "country": "Kenya"
+        },
+        "metadata": {
+          "_promptfooFileMetadata": {}
+        },
+        "failureReason": 1
+      }
+    ],
+    "stats": {
+      "successes": 3,
+      "failures": 1,
+      "errors": 0,
+      "tokenUsage": {
+        "prompt": 0,
+        "completion": 0,
+        "cached": 0,
+        "total": 0,
+        "numRequests": 4,
+        "completionDetails": {
+          "reasoning": 0,
+          "acceptedPrediction": 0,
+          "rejectedPrediction": 0,
+          "cacheReadInputTokens": 0,
+          "cacheCreationInputTokens": 0
+        },
+        "assertions": {
+          "total": 0,
+          "prompt": 0,
+          "completion": 0,
+          "cached": 0,
+          "numRequests": 0,
+          "completionDetails": {
+            "reasoning": 0,
+            "acceptedPrediction": 0,
+            "rejectedPrediction": 0,
+            "cacheReadInputTokens": 0,
+            "cacheCreationInputTokens": 0
+          }
+        }
+      },
+      "durationMs": 26,
+      "evaluationDurationMs": 26
+    }
+  },
+  "config": {
+    "tags": {},
+    "description": "capitals",
+    "prompts": [
+      "Capital of {{country}}?"
+    ],
+    "providers": [
+      {
+        "id": "file://agent.mjs",
+        "label": "agent",
+        "config": {
+          "answers": {
+            "Kenya": "Mombasa"
+          }
+        }
+      }
+    ],
+    "tests": [
+      {
+        "vars": {
+          "country": "France"
+        },
+        "assert": [
+          {
+            "type": "contains",
+            "value": "Paris",
+            "metric": "accuracy"
+          },
+          {
+            "type": "regex",
+            "value": "^[A-Z]",
+            "metric": "accuracy",
+            "weight": 3
+          },
+          {
+            "type": "regex",
+            "value": "^[A-Z][a-z]+$",
+            "metric": "format"
+          }
+        ]
+      },
+      {
+        "vars": {
+          "country": "Japan"
+        },
+        "assert": [
+          {
+            "type": "contains",
+            "value": "Tokyo",
+            "metric": "accuracy"
+          },
+          {
+            "type": "regex",
+            "value": "^[A-Z]",
+            "metric": "accuracy",
+            "weight": 3
+          },
+          {
+            "type": "regex",
+            "value": "^[A-Z][a-z]+$",
+            "metric": "format"
+          }
+        ]
+      },
+      {
+        "vars": {
+          "country": "Peru"
+        },
+        "assert": [
+          {
+            "type": "contains",
+            "value": "Lima",
+            "metric": "accuracy"
+          },
+          {
+            "type": "regex",
+            "value": "^[A-Z]",
+            "metric": "accuracy",
+            "weight": 3
+          },
+          {
+            "type": "regex",
+            "value": "^[A-Z][a-z]+$",
+            "metric": "format"
+          }
+        ]
+      },
+      {
+        "vars": {
+          "country": "Kenya"
+        },
+        "assert": [
+          {
+            "type": "contains",
+            "value": "Nairobi",
+            "metric": "accuracy"
+          },
+          {
+            "type": "regex",
+            "value": "^[A-Z]",
+            "metric": "accuracy",
+            "weight": 3
+          },
+          {
+            "type": "regex",
+            "value": "^[A-Z][a-z]+$",
+            "metric": "format"
+          }
+        ]
+      }
+    ],
+    "env": {},
+    "outputPath": [
+      "run.json"
+    ],
+    "extensions": [],
+    "metadata": {},
+    "evaluateOptions": {},
+    "basePath": "/private/tmp/evals-baseline-promptfoo-run"
+  },
+  "shareableUrl": null,
+  "metadata": {
+    "promptfooVersion": "0.125.1",
+    "nodeVersion": "v26.8.1",
+    "platform": "darwin",
+    "arch": "arm64",
+    "exportedAt": "2026-11-11T22:54:46.068Z",
+    "evaluationCreatedAt": "2026-11-11T22:54:46.024Z"
+  },
+  "vars": [
+    "country"
+  ],
+  "runtimeOptions": {
+    "eventSource": "cli",
+    "showProgressBar": false,
+    "repeat": 1,
+    "maxConcurrency": 4,
+    "cache": false
+  }
+}

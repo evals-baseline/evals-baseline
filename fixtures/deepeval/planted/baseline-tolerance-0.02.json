@@ -1,0 +1,25 @@
+{
+  "spec": "1.0",
+  "source": {
+    "tool": "deepeval",
+    "toolVersion": null,
+    "shape": "deepeval-test-run"
+  },
+  "recordedAt": "2026-09-02T09:00:00.000Z",
+  "cases": {
+    "count": 4,
+    "digest": "c8663ee8bc8a"
+  },
+  "metrics": {
+    "Accuracy": {
+      "value": 1,
+      "samples": 4,
+      "tolerance": 0.02
+    },
+    "Format": {
+      "value": 1,
+      "samples": 4,
+      "tolerance": 0.02
+    }
+  }
+}

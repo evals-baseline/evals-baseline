@@ -1,0 +1,204 @@
+{
+  "testCases": [
+    {
+      "name": "test_case_0",
+      "input": "France",
+      "actualOutput": "Paris",
+      "expectedOutput": "Paris",
+      "flaky": false,
+      "success": true,
+      "metricsData": [
+        {
+          "name": "Accuracy",
+          "threshold": 0.5,
+          "success": true,
+          "score": 1,
+          "strictMode": false,
+          "flaky": false
+        },
+        {
+          "name": "Format",
+          "threshold": 0.5,
+          "success": true,
+          "score": 1,
+          "strictMode": false,
+          "flaky": false
+        }
+      ],
+      "runDuration": 0.002547041978687048,
+      "order": 0
+    },
+    {
+      "name": "test_case_1",
+      "input": "Japan",
+      "actualOutput": "Tokyo",
+      "expectedOutput": "Tokyo",
+      "flaky": false,
+      "success": true,
+      "metricsData": [
+        {
+          "name": "Accuracy",
+          "threshold": 0.5,
+          "success": true,
+          "score": 1,
+          "strictMode": false,
+          "flaky": false
+        },
+        {
+          "name": "Format",
+          "threshold": 0.5,
+          "success": true,
+          "score": 1,
+          "strictMode": false,
+          "flaky": false
+        }
+      ],
+      "runDuration": 0.001363624818623066,
+      "order": 1
+    },
+    {
+      "name": "test_case_2",
+      "input": "Peru",
+      "actualOutput": "Lima",
+      "expectedOutput": "Lima",
+      "flaky": false,
+      "success": true,
+      "metricsData": [
+        {
+          "name": "Accuracy",
+          "threshold": 0.5,
+          "success": true,
+          "score": 1,
+          "strictMode": false,
+          "flaky": false
+        },
+        {
+          "name": "Format",
+          "threshold": 0.5,
+          "success": true,
+          "score": 1,
+          "strictMode": false,
+          "flaky": false
+        }
+      ],
+      "runDuration": 0.00146845867857337,
+      "order": 2
+    },
+    {
+      "name": "test_case_3",
+      "input": "Kenya",
+      "actualOutput": "Nairobi",
+      "expectedOutput": "Nairobi",
+      "flaky": false,
+      "success": true,
+      "metricsData": [
+        {
+          "name": "Accuracy",
+          "threshold": 0.5,
+          "success": true,
+          "score": 1,
+          "strictMode": false,
+          "flaky": false
+        },
+        {
+          "name": "Format",
+          "threshold": 0.5,
+          "success": true,
+          "score": 1,
+          "strictMode": false,
+          "flaky": false
+        }
+      ],
+      "runDuration": 0.0012882910668849945,
+      "order": 3
+    }
+  ],
+  "conversationalTestCases": [],
+  "metricsScores": [
+    {
+      "metric": "Accuracy",
+      "scores": [
+        0,
+        0.95,
+        0.6,
+        0.75,
+        0.85,
+        0.6,
+        0.95,
+        0.5,
+        1,
+        0.75,
+        0.95,
+        0.6,
+        0.5,
+        1,
+        1,
+        0.7,
+        0.8,
+        0.5,
+        0.95,
+        0.5,
+        1,
+        0,
+        1,
+        0.7,
+        0.9,
+        0.95,
+        0.85,
+        0.8,
+        0.9,
+        1,
+        0.9,
+        0.8
+      ],
+      "passes": 32,
+      "fails": 0,
+      "errors": 0
+    },
+    {
+      "metric": "Format",
+      "scores": [
+        0.85,
+        0.5,
+        0.95,
+        0.5,
+        0.75,
+        0.9,
+        1,
+        0.85,
+        0.75,
+        0.85,
+        0.5,
+        0.95,
+        1,
+        0.6,
+        0.8,
+        0.75,
+        0.95,
+        0.95,
+        0.9,
+        0.9,
+        0.95,
+        1,
+        0.7,
+        0,
+        0.6,
+        1,
+        0.85,
+        0.8,
+        0.95,
+        0.7,
+        0,
+        0.6
+      ],
+      "passes": 32,
+      "fails": 0,
+      "errors": 0
+    }
+  ],
+  "prompts": [],
+  "testPassed": 4,
+  "testFailed": 0,
+  "runDuration": 0.01740212505683303,
+  "official": false
+}

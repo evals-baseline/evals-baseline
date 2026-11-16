@@ -1,0 +1,30 @@
+{
+  "spec": "1.0",
+  "source": {
+    "tool": "promptfoo",
+    "toolVersion": "0.125.1",
+    "shape": "promptfoo-results-3"
+  },
+  "recordedAt": "2026-09-02T09:00:00.000Z",
+  "cases": {
+    "count": 4,
+    "digest": "e6c6ecf167ab"
+  },
+  "metrics": {
+    "agent :: accuracy": {
+      "value": 1,
+      "samples": 4,
+      "tolerance": 0
+    },
+    "agent :: bad\n::error::pwned\u001b[31m": {
+      "value": 1,
+      "samples": 4,
+      "tolerance": 0
+    },
+    "agent :: format": {
+      "value": 1,
+      "samples": 4,
+      "tolerance": 0
+    }
+  }
+}

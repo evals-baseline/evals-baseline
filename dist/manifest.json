@@ -1,0 +1,26 @@
+{
+  "package": "1.0.0",
+  "specification": "1.0",
+  "sourceSet": {
+    "sha256": "000a9f053ea1f6d9a1dc3fe27973f2389b9cc39ce5cffe772794ff1fb03d8d99",
+    "files": [
+      "src/printable.mjs",
+      "src/unreadable.mjs",
+      "src/digest.mjs",
+      "src/quantise.mjs",
+      "src/direction.mjs",
+      "src/read-run.mjs",
+      "src/read-baseline.mjs",
+      "src/compare.mjs",
+      "src/describe.mjs",
+      "src/record.mjs",
+      "src/render.mjs",
+      "src/command.mjs",
+      "src/cli.mjs"
+    ]
+  },
+  "generated": {
+    "dist/action.mjs": "c7f9d67c641c7a5b4450938ac076effa6a5e5bff7bf0ca69d698f6f8aadf0657",
+    "dist/evals-baseline.mjs": "e52f81713e53dc1f7b787764b88182732bab8b13308b9451ecd03c1618daa158"
+  }
+}

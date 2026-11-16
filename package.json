@@ -1,0 +1,41 @@
+{
+  "name": "evals-baseline",
+  "version": "1.0.0",
+  "description": "Compares an evaluation run from promptfoo or DeepEval with a committed baseline and prints what regressed.",
+  "keywords": [
+    "promptfoo",
+    "deepeval",
+    "llm-evals",
+    "regression",
+    "baseline",
+    "ci",
+    "github-action"
+  ],
+  "homepage": "https://meshin.co/spec/evals-baseline",
+  "bugs": "https://github.com/evals-baseline/evals-baseline/issues",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/evals-baseline/evals-baseline.git"
+  },
+  "author": {
+    "name": "Dmitri Meshin",
+    "url": "https://meshin.co"
+  },
+  "type": "module",
+  "license": "Apache-2.0",
+  "bin": {
+    "evals-baseline": "src/cli.mjs"
+  },
+  "files": [
+    "src"
+  ],
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "test": "node --test",
+    "build": "node build/build.mjs",
+    "parity": "node build/parity.mjs",
+    "guards": "node build/guards.mjs"
+  }
+}
